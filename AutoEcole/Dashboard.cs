@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AutoEcole.mounib
+namespace AutoEcole
 {
-    public partial class formMounib : Form
+    public partial class Dashboard : Form
     {
-        public formMounib()
+        public Dashboard()
         {
             InitializeComponent();
         }
