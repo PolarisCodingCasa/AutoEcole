@@ -117,32 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="group_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\group_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_add.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAkRJREFUaEPt
+        mctqFFEQhsdEcWEU3ShEwbyEWfgagj5IFi5cS3Bn8IKBPICIl6W40lcwuHUhXghKAi4MMc7F78A/zVDU
+        aeecmZ72QH/wrVL1V3X3TGamu9fR0TE7o9FoCdcHg8EGPsVdPDC+x/C3DWqvhR61twdLXGGhe/gFR4l+
+        xk0yLitucTD0AsMf4JGWmcWQsUXmecU3S7/fv8nA7xMLzMs9sm9ozPzhDJ1iyLYZ2oSPwiyNnQ8ErgyH
+        wzfOsEZk1mtmntH42SDoNJf2nTeoSZn5NszWGvkQ9tiGL9AtrZEHZ+GWE7pQs9/YXL5VAn7awBbcZ5eL
+        Wmt6aNwxQW36RGtNB0e8RtMfE9Kmx+x0Vev9Gxo2TUCyiqrwahK9q6h6ONKTFO+Z5mQVV+HVJPqV3ZYV
+        F4ei605zsoqr8GpShXXFxaHwjm3MUXEVXk2GtxUXh4/xV05jsoqr8GpSZbfniotD4QfbmKPiKryaDHcV
+        F4eifdNUq9qy8TJr/KG2OBT9Nk21qi0bL7PGI7XFoejYNNWqtmy8zBqnOoDiX0Jlv4nDvyqnMVnFVXg1
+        qbLbM8XFobDsD7Liv0pQtETxJ9ucquIqvJpEP7LbCcXVQ3G5X6cDHOklGg5NQJv+Yqe0n5U0PTQhbXpf
+        a00PR3yOxm8mqA3DD5mzWiuNom+rjCGk3BtbAS7fMp+AL53wRmXmC2bP5yEIQeXe3B1DYLm31yfhTVXm
+        A45JOEPlPmKahKFlPuSzsETsMet42f/zMWtHR/H0en8BnZp9l1KZZ78AAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="Logo Auto Ecole" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Auto Ecole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Money Bag Franc_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Money Bag Franc_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_account_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_account_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warning_shield_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning_shield_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="workspace_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\workspace_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_add.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAkRJREFUaEPt
+        mctqFFEQhsdEcWEU3ShEwbyEWfgagj5IFi5cS3Bn8IKBPICIl6W40lcwuHUhXghKAi4MMc7F78A/zVDU
+        aeecmZ72QH/wrVL1V3X3TGamu9fR0TE7o9FoCdcHg8EGPsVdPDC+x/C3DWqvhR61twdLXGGhe/gFR4l+
+        xk0yLitucTD0AsMf4JGWmcWQsUXmecU3S7/fv8nA7xMLzMs9sm9ozPzhDJ1iyLYZ2oSPwiyNnQ8ErgyH
+        wzfOsEZk1mtmntH42SDoNJf2nTeoSZn5NszWGvkQ9tiGL9AtrZEHZ+GWE7pQs9/YXL5VAn7awBbcZ5eL
+        Wmt6aNwxQW36RGtNB0e8RtMfE9Kmx+x0Vev9Gxo2TUCyiqrwahK9q6h6ONKTFO+Z5mQVV+HVJPqV3ZYV
+        F4ei605zsoqr8GpShXXFxaHwjm3MUXEVXk2GtxUXh4/xV05jsoqr8GpSZbfniotD4QfbmKPiKryaDHcV
+        F4eifdNUq9qy8TJr/KG2OBT9Nk21qi0bL7PGI7XFoejYNNWqtmy8zBqnOoDiX0Jlv4nDvyqnMVnFVXg1
+        qbLbM8XFobDsD7Liv0pQtETxJ9ucquIqvJpEP7LbCcXVQ3G5X6cDHOklGg5NQJv+Yqe0n5U0PTQhbXpf
+        a00PR3yOxm8mqA3DD5mzWiuNom+rjCGk3BtbAS7fMp+AL53wRmXmC2bP5yEIQeXe3B1DYLm31yfhTVXm
+        A45JOEPlPmKahKFlPuSzsETsMet42f/zMWtHR/H0en8BnZp9l1KZZ78AAAAASUVORK5CYII=
+</value>
   </data>
 </root>

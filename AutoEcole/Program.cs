@@ -16,7 +16,7 @@ namespace AutoEcole
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Auth.Login());
+            Application.Run(new Dashboard());
         }
     }
 }
