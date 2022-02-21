@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\..\Documents\Guna\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -42,8 +48,11 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +76,24 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelauto.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelauto.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelauto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelauto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelauto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelauto.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Paiement.cs">
+      <DependentUpon>Modelauto.tt</DependentUpon>
+    </Compile>
     <Compile Include="Participant\F_AM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +105,9 @@
     </Compile>
     <Compile Include="Participant\F_index.Designer.cs">
       <DependentUpon>F_index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participan_typePermi.cs">
+      <DependentUpon>Modelauto.tt</DependentUpon>
     </Compile>
     <Compile Include="Payemant\F_AM.cs">
       <SubType>Form</SubType>
@@ -99,6 +129,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TParticipant.cs">
+      <DependentUpon>Modelauto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="typePermi.cs">
+      <DependentUpon>Modelauto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <DependentUpon>Modelauto.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Auth\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +169,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="Modelauto.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Modelauto.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelauto.edmx.diagram">
+      <DependentUpon>Modelauto.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,7 +190,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Modelauto.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Modelauto.Context.cs</LastGenOutput>
+      <DependentUpon>Modelauto.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelauto.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Modelauto.edmx</DependentUpon>
+      <LastGenOutput>Modelauto.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\group_48px.png" />
   </ItemGroup>
@@ -170,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\workspace_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
