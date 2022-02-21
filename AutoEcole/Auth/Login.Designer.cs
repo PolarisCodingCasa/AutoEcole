@@ -119,6 +119,7 @@
             // 
             this.btn_login.BorderRadius = 15;
             this.btn_login.CheckedState.Parent = this.btn_login;
+            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.CustomImages.Parent = this.btn_login;
             this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
@@ -130,6 +131,7 @@
             this.btn_login.Size = new System.Drawing.Size(120, 45);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Log In";
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // Login
             // 

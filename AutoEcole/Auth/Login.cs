@@ -35,5 +35,21 @@ namespace AutoEcole.Auth
 
         }
 
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            var user = (from i in Program.autoEcoleDB.users
+                        where i.username == txt_user.Text && i.password_ == txt_pass.Text
+                        select i).ToList();
+            if (user.Count != 0)
+            {
+                this.Hide();
+                Form form = new Dashboard();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
+        }
     }
 }

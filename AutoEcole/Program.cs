@@ -16,7 +16,7 @@ namespace AutoEcole
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new Auth.Login());
         }
         //mounib Entity
         public static autoEcoleDBEntities autoEcoleDB = new autoEcoleDBEntities();
