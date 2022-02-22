@@ -16,5 +16,28 @@ namespace AutoEcole.Principal
         {
             InitializeComponent();
         }
+
+        private void F_Home_Load(object sender, EventArgs e)
+        {
+            int nbrPartici = (from i in Program.autoEcoleDB.Paiements
+                              select i).Count();
+            int nbrPayment = (from i in Program.autoEcoleDB.Paiements
+                              where i.createAt.Value.Month == DateTime.Today.Month
+                              select i).Count();
+            Label_Participant.Text = "" + nbrPartici;
+            Label_payment.Text = "" + nbrPayment;
+        }
+
+        private void Btn_participant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_payment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
