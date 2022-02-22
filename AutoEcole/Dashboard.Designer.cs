@@ -75,7 +75,7 @@
             this.btn_home.TabIndex = 12;
             this.btn_home.TabStop = false;
             this.btn_home.UseTransfarantBackground = false;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
+            this.btn_home.Click += new System.EventHandler(this.Btn_home_Click);
             // 
             // btn_admin
             // 
@@ -140,7 +140,7 @@
             this.btn_payement.Size = new System.Drawing.Size(169, 42);
             this.btn_payement.TabIndex = 10;
             this.btn_payement.Text = "Payement";
-            this.btn_payement.Click += new System.EventHandler(this.btn_payement_Click);
+            this.btn_payement.Click += new System.EventHandler(this.Btn_payement_Click);
             // 
             // btn_particip
             // 
@@ -173,7 +173,7 @@
             this.btn_particip.Size = new System.Drawing.Size(169, 42);
             this.btn_particip.TabIndex = 9;
             this.btn_particip.Text = "Participant";
-            this.btn_particip.Click += new System.EventHandler(this.btn_particip_Click);
+            this.btn_particip.Click += new System.EventHandler(this.Btn_particip_Click);
             // 
             // NavUser
             // 
@@ -220,7 +220,7 @@
             this.btn_close.Size = new System.Drawing.Size(129, 42);
             this.btn_close.TabIndex = 11;
             this.btn_close.Text = "Close App";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.btn_close.Click += new System.EventHandler(this.Btn_close_Click);
             // 
             // btn_setting
             // 
@@ -290,6 +290,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseDown);
             this.gunaGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_home)).EndInit();
             this.NavUser.ResumeLayout(false);

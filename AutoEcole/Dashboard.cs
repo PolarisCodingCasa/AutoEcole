@@ -13,6 +13,12 @@ namespace AutoEcole
 {
     public partial class Dashboard : Form
     {
+        //move form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        //radios 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -48,9 +54,8 @@ namespace AutoEcole
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            NavUser.Visible = false;
-            Form form = new Principal.F_Home();
-            Panelaffiche(form);
+            NavUser.Visible = false;          
+            Panelaffiche(new Principal.F_Home());
         }
 
         private void btn_nav_Click(object sender, EventArgs e)
@@ -61,27 +66,19 @@ namespace AutoEcole
                 NavUser.Visible = true;               
         }
 
-        private void btn_close_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        private void Btn_close_Click(object sender, EventArgs e) => Application.Exit();
 
-        private void btn_particip_Click(object sender, EventArgs e)
-        {
-            Form form = new Payemant.F_index();
-            Panelaffiche(form);
-        }
 
-        private void btn_payement_Click(object sender, EventArgs e)
-        {
-            Form form = new Payemant.F_index();
-            Panelaffiche(form);
-        }
+        private void Btn_particip_Click(object sender, EventArgs e) => Panelaffiche(new Payemant.F_index());
 
-        private void btn_home_Click(object sender, EventArgs e)
+        private void Btn_payement_Click(object sender, EventArgs e) => Panelaffiche(new Payemant.F_index());
+
+        private void Btn_home_Click(object sender, EventArgs e) => Panelaffiche(new Principal.F_Home());
+
+        private void Dashboard_MouseDown(object sender, MouseEventArgs e)
         {
-            Form form = new Principal.F_Home();
-            Panelaffiche(form);
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
