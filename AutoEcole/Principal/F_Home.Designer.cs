@@ -33,8 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaTileButton3 = new Guna.UI.WinForms.GunaTileButton();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
@@ -126,6 +126,12 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Image = global::AutoEcole.Properties.Resources.workspace_96px;
+            this.Column1.Name = "Column1";
+            // 
             // gunaLineTextBox1
             // 
             this.gunaLineTextBox1.BackColor = System.Drawing.Color.White;
@@ -142,12 +148,6 @@
             this.gunaLineTextBox1.TabIndex = 20;
             this.gunaLineTextBox1.Text = "Search";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Image = global::AutoEcole.Properties.Resources.workspace_96px;
-            this.Column1.Name = "Column1";
-            // 
             // gunaTileButton3
             // 
             this.gunaTileButton3.AnimationHoverSpeed = 0.07F;
@@ -155,6 +155,7 @@
             this.gunaTileButton3.BackColor = System.Drawing.Color.Transparent;
             this.gunaTileButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.gunaTileButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaTileButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaTileButton3.FocusedColor = System.Drawing.Color.Empty;
             this.gunaTileButton3.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
@@ -171,6 +172,7 @@
             this.gunaTileButton3.Radius = 12;
             this.gunaTileButton3.Size = new System.Drawing.Size(60, 60);
             this.gunaTileButton3.TabIndex = 26;
+            this.gunaTileButton3.Visible = false;
             // 
             // guna2Panel3
             // 
@@ -184,6 +186,7 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(200, 100);
             this.guna2Panel3.TabIndex = 25;
+            this.guna2Panel3.Visible = false;
             // 
             // gunaLabel7
             // 
@@ -225,6 +228,7 @@
             this.gunaTileButton2.BackColor = System.Drawing.Color.Transparent;
             this.gunaTileButton2.BaseColor = System.Drawing.Color.Green;
             this.gunaTileButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaTileButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaTileButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaTileButton2.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
@@ -258,6 +262,7 @@
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel4.Location = new System.Drawing.Point(92, 68);
@@ -295,6 +300,7 @@
             this.gunaTileButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaTileButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTileButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaTileButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaTileButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaTileButton1.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
@@ -328,6 +334,7 @@
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel3.Location = new System.Drawing.Point(92, 68);
@@ -373,6 +380,7 @@
             this.Controls.Add(this.gunaLineTextBox1);
             this.Controls.Add(this.gunaLabel10);
             this.Controls.Add(this.guna2DataGridView1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_Home";
             this.Text = "F_Home";

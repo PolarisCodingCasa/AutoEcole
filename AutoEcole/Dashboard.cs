@@ -38,7 +38,6 @@ namespace AutoEcole
         //affiche forms in pannel
         public void Panelaffiche(Form form_af)
         {
-
             int panelcont = this.panelContainer.Controls.Count;
             if (panelcont > 0)
             {
@@ -54,7 +53,7 @@ namespace AutoEcole
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            NavUser.Visible = false;          
+            NavUser.Visible = false;
             Panelaffiche(new Principal.F_Home());
         }
 
@@ -63,13 +62,12 @@ namespace AutoEcole
             if (NavUser.Visible)
                 NavUser.Visible = false;
             else
-                NavUser.Visible = true;               
+                NavUser.Visible = true;
         }
 
         private void Btn_close_Click(object sender, EventArgs e) => Application.Exit();
 
-
-        private void Btn_particip_Click(object sender, EventArgs e) => Panelaffiche(new Payemant.F_index());
+        private void Btn_particip_Click(object sender, EventArgs e) => Panelaffiche(new Participant.F_index());
 
         private void Btn_payement_Click(object sender, EventArgs e) => Panelaffiche(new Payemant.F_index());
 
