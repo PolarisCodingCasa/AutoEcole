@@ -265,7 +265,7 @@
             this.btn_nav.PressedState.Parent = this.btn_nav;
             this.btn_nav.Size = new System.Drawing.Size(26, 34);
             this.btn_nav.TabIndex = 16;
-            this.btn_nav.Click += new System.EventHandler(this.btn_nav_Click);
+            this.btn_nav.Click += new System.EventHandler(this.Btn_nav_Click);
             // 
             // panelContainer
             // 
